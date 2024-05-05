@@ -46,3 +46,217 @@
         }
     }
 }
+
+/*-- -------------------------- -->
+<---        salmon              -->
+<--- -------------------------- -*/
+
+#salmon {
+    display: block !important;
+    .cs-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .image-group-2 {
+        width: 50%;
+        .cs-picture {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .text-content {
+        width: 50%;
+    }
+
+    ul{
+        padding-left: 20px;
+        li{
+            &::marker {
+                color: var(--primary);
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #salmon {
+        .cs-container {
+            flex-direction: column;
+        }
+        .image-group-2 {
+            width: 100%;
+            .cs-picture {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .text-content {
+            width: 100%;
+        }
+    }
+}
+
+
+/*-- -------------------------- -->
+<---     Book our services      -->
+<--- -------------------------- -*/
+
+#book-services {
+    padding-top: 0;
+    .cs-services-banner{
+        background: url("../assets/images/book-our-service.png") no-repeat var(--secondary) top right;
+        display: inline-block;
+        width: 100%;
+        padding: 50px;
+        border-radius: 27px;
+        padding-right: 40%;
+        h4{
+            color: var(--bodyTextColorWhite);
+            font-size: 48px;
+        }
+        p{
+            color: var(--bodyTextColorWhite);
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+
+    #book-services {
+        .cs-services-banner{
+            padding: 25px 30px;
+            border-radius: 27px;
+            padding-right: 37%;
+            background-size: 40%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #book-services {
+        .cs-services-banner{
+            padding: 50px;
+            padding-right: 50px;
+            background: var(--secondary);
+        }
+    }
+}
+
+
+/*-- -------------------------- -->
+<---     Pricing & Packages     -->
+<--- -------------------------- -*/
+
+#pricing-and-packages {
+    padding-top: 0;
+    .cs-title{
+        text-align: center;
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+    .pricing-container{
+        background: #D9D9D9;
+        border-radius: 19px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        .cs-card{
+            background: #fff;
+            padding: 50px 30px;
+            border-radius: 26px;
+            width: 31.5%;
+            &.active{
+                background: var(--secondary);
+                span{
+                    color: #fff;
+                }
+                h6{
+                    color: #fff;
+                    small{
+                        color: #fff;
+                    }
+                }
+                p{
+                    color: #fff;
+                }
+            }
+            span{
+                color: #145FA4;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            h6{
+                font-size: 40px;
+                text-align: left;
+                margin: 10px 0 20px;
+                &.green{
+                    color: var(--primary);
+                }
+                small{
+                    font-size: 14px;
+                    font-family: 'Quicksand';
+                    color: var(--bodyTextColor);
+                    position: relative;
+                    top: -4px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1230px) {
+
+    #pricing-and-packages {
+        .pricing-container{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #pricing-and-packages {
+        .pricing-container{
+            width: 60%;
+           flex-direction: column;
+           padding: 15px 30px;
+           .cs-card{
+            width: 100%;
+            margin: 15px 0;
+           }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    #pricing-and-packages {
+        .pricing-container{
+            width: 100%;
+           flex-direction: column;
+           .cs-card{
+            width: 100%;
+            margin: 15px 0;
+           }
+        }
+    }
+}
